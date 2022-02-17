@@ -48,4 +48,6 @@ app.get("/exchange_token", (req, res) => {
 
 
 
-app.listen(8080, () => console.log("server running in 8080"))
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`server is runnin on ${process.env.PORT}`)
+})
