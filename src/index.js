@@ -30,7 +30,6 @@ app.get("/exchange_token", (req, res) => {
       console.log("posting user")
       let access_token
       let refresh_token
-      let expires_at
       let id
 
       axios.post(`https://www.strava.com/oauth/token?client_id=76862&client_secret=67401766aa8757e4f2c742595091a8d3014137c6&code=${code}&grant_type=authorization_code`, {})
