@@ -24,7 +24,8 @@ const database = getFirestore(firebaseApp);
 //urli jolla saa käyttäjän tiedon luvun
 
 app.get("/exchange_token", (req, res) => {
-  
+
+      console.log('exhancge token')
       const userRef = doc(collection(database, '/users'))
       const code = req.query.code
       console.log("posting user")
