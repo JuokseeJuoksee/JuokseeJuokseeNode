@@ -47,7 +47,9 @@ app.get("/exchange_token", (req, res) => {
       .catch(err => console.error(err)) 
   })
 
-
+app.get("/redirect", (req, res) => {
+  res.send('laita selain kiinni')
+})
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`server is runnin on ${process.env.PORT}`)
